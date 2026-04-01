@@ -1,4 +1,5 @@
 <?php
+//include
 include '../config/koneksi.php';
 
 $guru = mysqli_query($conn, "SELECT * FROM guru ORDER BY nama ASC");
