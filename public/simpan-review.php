@@ -1,7 +1,7 @@
 <?php
 include '../config/koneksi.php';
 
-$tamu_id = $_POST['tamu_id'];
+$tamu_id = $_POST['tamu_id']; //id tamu
 $rating = $_POST['rating'];
 $tags = $_POST['tags'];
 
