@@ -1,4 +1,5 @@
 <?php
+//menghubungkan file koneksi database
 include '../config/koneksi.php';
 
 // menampilkan pesan jika file ini berhasil dijalankan
