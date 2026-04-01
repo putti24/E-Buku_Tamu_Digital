@@ -4,7 +4,7 @@ include '../config/koneksi.php';
 
 if (!isset($_SESSION['admin'])) {
     header("Location: login.php");
-    exit;
+    exit; //setelah login berhasil akses akan diarahkan di halaman dashboard
 }
 
 /* ================= QUERY ================= */
