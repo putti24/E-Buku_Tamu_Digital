@@ -3,6 +3,7 @@
 include '../config/koneksi.php';
 
 $guru = mysqli_query($conn, "SELECT * FROM guru ORDER BY nama ASC");
+//mengambil data guru dari database, diurutkan berdasarkan nama (ASC=A-Z)
 
 if (isset($_POST['simpan'])) {
 
