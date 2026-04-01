@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../config/koneksi.php';
+include '../config/koneksi.php'; // ini ketika ingi menghubungkan dengan database harus icludekan kkoneksi yg sudah dibuat di config
   
 if (isset($_POST['login'])) {
 
@@ -13,8 +13,8 @@ if (isset($_POST['login'])) {
     if ($data) {
         $_SESSION['login'] = true;
         $_SESSION['username'] = $data['username'];
-        $_SESSION['role'] = $data['role'];
-
+        $_SESSION['role'] = $data['role']; // ini adalah session untuk identify role yang sudah dibuat di database
+// resepsionis atau super admin
         header("Location: dashboard.php");
         exit;
     } else {
